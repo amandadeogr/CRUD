@@ -21,7 +21,7 @@ const createClient = (client) => {
   setLocalStorage(dbClient);
 };
 
-
+const readClient = () => getLocalStorage();
 
 //events
 const registerClientButton = document.getElementById('registerClient');
