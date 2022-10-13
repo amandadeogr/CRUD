@@ -23,6 +23,13 @@ const createClient = (client) => {
 
 const readClient = () => getLocalStorage();
 
+const updateClient = (index, client) => {
+  const dbClient = readClient();
+  dbClient[index] = client;
+  setLocalStorage(dbClient);
+};
+
+
 //events
 const registerClientButton = document.getElementById('registerClient');
 registerClientButton.addEventListener('click', openModal);
