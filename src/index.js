@@ -45,10 +45,18 @@ const saveClient = () => {
       email: document.getElementById('name').value,
       birthDate: document.getElementById('birthDate').value
     }
+    const index = document.getElementById('name').dataset.index;
+    if(index == 'new') {
+      createClient(client);
+      updateTable()
+      closeModal();
+    } else {
+      updateClient();
+      updateTable()
+      closeModal()
+    }
     console.log(client);
-    createClient(client);
-    updateTable()
-    closeModal();
+    
   }
 }
 
@@ -94,6 +102,24 @@ const editClient = (index) => {
   openModal();
 }
 
+const isEditOrDeleteButton = (event) => {
+  if(event.target.type == 'button') {
+    const [action, index] = event.target.id.split('-');
+
+    if(action == 'edit') {
+      editClient(index);
+    } else {
+      const client = readClient()[index];
+      const response = confirm(`Deseja realmente excluir o cliente ${client.nome}`);
+
+      if(response) {
+        deleteClient(index);
+        updateTable()
+      }
+    }
+  }
+}
+
 
 //events
 const registerClientButton = document.getElementById('registerClient');
@@ -103,4 +129,7 @@ const closeModalButton = document.getElementById('closeModal');
 closeModalButton.addEventListener('click', closeModal);
 
 const saveClientButton = document.getElementById('saveClient');
-saveClientButton.addEventListener('click', saveClient)
+saveClientButton.addEventListener('click', saveClient);
+
+const editAndDeleteButton = document.querySelector('#table>tBody');
+editAndDeleteButton.addEventListener('click', isEditOrDeleteButton);
