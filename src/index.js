@@ -35,9 +35,25 @@ const deleteClient = (index) => {
   setLocalStorage(dbClient);
 };
 
+// interação com o layout
+const saveClient = () => {
+  const client = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('name').value,
+    birthDate: document.getElementById('birthDate').value
+  }
+  console.log(client)
+  createClient(client)
+}
+
+
+
 //events
 const registerClientButton = document.getElementById('registerClient');
 registerClientButton.addEventListener('click', openModal);
 
 const closeModalButton = document.getElementById('closeModal');
-closeModalButton.addEventListener('click', closeModal)
+closeModalButton.addEventListener('click', closeModal);
+
+const saveClientButton = document.getElementById('saveClient');
+saveClientButton.addEventListener('click', saveClient)
