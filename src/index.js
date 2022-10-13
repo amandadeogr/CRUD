@@ -29,6 +29,11 @@ const updateClient = (index, client) => {
   setLocalStorage(dbClient);
 };
 
+const deleteClient = (index) => {
+  const dbClient = readClient();
+  dbClient.splice(index, 1);
+  setLocalStorage(dbClient);
+};
 
 //events
 const registerClientButton = document.getElementById('registerClient');
