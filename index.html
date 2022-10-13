@@ -6,11 +6,16 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>CRUD- Cadastro de clientes</title>
 
+   <link rel="stylesheet" href="/assets/css/reset.css">
    <link rel="stylesheet" href="/assets/css/container.css">
 
    <link rel="stylesheet" href="/assets/css/header/header.css">
    <link rel="stylesheet" href="/assets/css/header/title.css">
    <link rel="stylesheet" href="/assets/css/header/button.css">
+
+   <link rel="stylesheet" href="/assets/css/table/table.css">
+   <link rel="stylesheet" href="/assets/css/table/table-row.css">
+   <link rel="stylesheet" href="/assets/css/table/head-title.css">
 </head>
 <body>
    <main class="container">
@@ -18,6 +23,21 @@
          <h1 class="header__title">Cadastro de clientes</h1>
          <button class="header__button" id="button">Adicionar cliente</button>
       </header>
+
+      <table class="table" id="table">
+         <thead class="table__head">
+            <tr class="table-row">
+               <th class="table__row__title">Nome</th>
+               <th class="table__row__title">Email</th>
+               <th class="table__row__title">Data de nascimento</th>
+               <th class="table__row__title">Ações</th>
+            </tr>
+         </thead>
+
+         <tbody class="table__body">
+
+         </tbody>
+      </table>
    </main>
 </body>
 </html>

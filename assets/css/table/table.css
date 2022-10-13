@@ -1,0 +1,13 @@
+.table {
+   background-color: #1d1d1d;
+   border-radius: 10px;
+   box-shadow: 1px 1px 40px #555555;
+   color: rgb(226, 226, 226);
+   min-height: 20vh;
+   margin: 2rem auto;
+   overflow-y: scroll;
+   padding: 1rem 2rem;
+   text-align: center;
+   table-layout: fixed;
+   width: 90%;
+}
