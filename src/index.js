@@ -4,6 +4,7 @@ const openModal = () => {
 }
 
 const closeModal = () => {
+   clearFields()
    modal.classList.remove('active');
 }
 
@@ -38,14 +39,21 @@ const deleteClient = (index) => {
 // interação com o layout
 const isValidFields = () => document.getElementById('form').reportValidity();
 
+const clearFields = () => {
+  const fields = document.querySelectorAll('.modal__form__field');
+  fields.forEach((field) => (field.value = ''));
+  document.getElementById('name').dataset.index = 'new';
+}
+
 const saveClient = () => {
   if(isValidFields()) {
     const client = {
       name: document.getElementById('name').value,
-      email: document.getElementById('name').value,
+      email: document.getElementById('email').value,
       birthDate: document.getElementById('birthDate').value
     }
     const index = document.getElementById('name').dataset.index;
+    console.log(index)
     if(index == 'new') {
       createClient(client);
       updateTable()
