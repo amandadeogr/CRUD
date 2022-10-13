@@ -36,14 +36,20 @@ const deleteClient = (index) => {
 };
 
 // interação com o layout
+const isValidFields = () => document.getElementById('form').reportValidity();
+
 const saveClient = () => {
-  const client = {
-    name: document.getElementById('name').value,
-    email: document.getElementById('name').value,
-    birthDate: document.getElementById('birthDate').value
+  if(isValidFields()) {
+    const client = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('name').value,
+      birthDate: document.getElementById('birthDate').value
+    }
+    console.log(client)
+    createClient(client)
+    closeModal()
   }
-  console.log(client)
-  createClient(client)
+
 }
 
 
