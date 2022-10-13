@@ -45,11 +45,28 @@ const saveClient = () => {
       email: document.getElementById('name').value,
       birthDate: document.getElementById('birthDate').value
     }
-    console.log(client)
-    createClient(client)
-    closeModal()
+    console.log(client);
+    createClient(client);
+    closeModal();
   }
+}
 
+const createRow = (client, index) => {
+  const newRow = document.createElement('tr');
+  newRow.innerHTML = `
+  <td>${client.name}</td>
+  <td>${client.email}</td>
+  <td>${client.birthDate}</td>
+  <td>
+     <button type="button" class="button edit" id="edit-${index}">
+        Editar
+     </button> 
+
+     <button type="button" class="button delete" id="delete-${index}">
+        Excluir
+     </button>
+  `
+  const tBody = document.querySelector("#table>tbody").appendChild(newRow)
 }
 
 
