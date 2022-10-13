@@ -1,0 +1,10 @@
+.container {
+   background-color: blueviolet;
+   border-radius: 10px;
+   box-shadow: 1px 1px 40px #555555;
+   height: 80vh;
+   margin: 4rem auto;
+   overflow-y: scroll;
+   padding: 3rem;
+   width: 80vw;
+}
