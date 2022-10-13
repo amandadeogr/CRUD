@@ -14,6 +14,15 @@ const getLocalStorage = () =>
 const setLocalStorage = (dbClient) =>
   localStorage.setItem("db_client", JSON.stringify(dbClient));
 
+//CRUD
+const createClient = (client) => {
+  const dbClient = getLocalStorage();
+  dbClient.push(client);
+  setLocalStorage(dbClient);
+};
+
+
+
 //events
 const registerClientButton = document.getElementById('registerClient');
 registerClientButton.addEventListener('click', openModal);
