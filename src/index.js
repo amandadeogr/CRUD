@@ -47,6 +47,7 @@ const saveClient = () => {
     }
     console.log(client);
     createClient(client);
+    updateTable()
     closeModal();
   }
 }
@@ -78,6 +79,19 @@ const updateTable = () => {
   const dbClient = readClient();
   clearTable();
   dbClient.forEach(createRow);
+}
+
+const fillFields = () => {
+  document.getElementById("name").value = client.name;
+  document.getElementById("email").value = client.email;
+  document.getElementById("birthDate").value = client.birthDate;
+}
+
+const editClient = (index) => {
+  const client = readClient()[index];
+  client.index = index;
+  fillFields(client);
+  openModal();
 }
 
 
