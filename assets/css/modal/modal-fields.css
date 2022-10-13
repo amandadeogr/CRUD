@@ -1,0 +1,6 @@
+.modal__form__field {
+   border: 1px solid blueviolet;
+   border-radius: 5px;
+   margin: .5rem;
+   padding: 1rem;
+}

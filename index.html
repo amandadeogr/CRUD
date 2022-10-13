@@ -16,6 +16,15 @@
    <link rel="stylesheet" href="/assets/css/table/table.css">
    <link rel="stylesheet" href="/assets/css/table/table-row.css">
    <link rel="stylesheet" href="/assets/css/table/head-title.css">
+
+   <link rel="stylesheet" href="/assets/css/modal/modal.css">
+   <link rel="stylesheet" href="/assets/css/modal/modal-content.css">
+   <link rel="stylesheet" href="/assets/css/modal/modal-header.css">
+   <link rel="stylesheet" href="/assets/css/modal/modal-footer.css">
+   <link rel="stylesheet" href="/assets/css/modal/modal-buttons.css">
+   <link rel="stylesheet" href="/assets/css/modal/modal-form.css">
+   <link rel="stylesheet" href="/assets/css/modal/modal-fields.css">
+
 </head>
 <body>
    <main class="container">
@@ -38,6 +47,46 @@
 
          </tbody>
       </table>
+
+      <div class="modal" id="modal">
+         <div class="modal__content">
+            <header class="modal__content__header">
+               <h2 class="modal__content__header__title">Novo Cliente</h2>
+            </header>
+
+            <form action="" class="modal__content__form" id="form">
+               <input 
+               type="text" 
+               class="modal__form__field" 
+               id="name"
+               placeholder="Nome do cliente"
+               required
+               >
+
+               <input 
+               type="text" 
+               class="modal__form__field" 
+               id="email"
+               placeholder="Email do cliente"
+               required
+               >
+
+               <input 
+               type="date" 
+               class="modal__form__field" 
+               id="birthDate"
+               placeholder="Data de nascimento do cliente"
+               required
+               >
+            </form>
+
+            <footer class="modal__content__footer">
+               <button class="modal__footer__button red" id="closeModal">Fechar</button>
+
+               <button class="modal__footer__button violet" id="saveClient">Salvar cliente</button>
+            </footer>
+         </div>
+      </div>
    </main>
 </body>
 </html>

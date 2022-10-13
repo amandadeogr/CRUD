@@ -1,0 +1,28 @@
+.modal__footer__button {
+   border-radius: 5px;
+   color: white;
+   cursor: pointer;
+   padding: .8rem 1rem;
+   transition: .5s;
+}
+
+.violet {
+   background-color: blueviolet;
+   border: 1px solid blueviolet;
+}
+
+.violet:hover {
+   background-color: rgb(58, 1, 105);
+   border-color:rgb(58, 1, 105);
+}
+
+.red {
+   border: 1px solid red;
+   background-color: transparent;
+   color: red;
+}
+
+.red:hover {
+   background-color: red;
+   color: white;
+}
