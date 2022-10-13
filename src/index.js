@@ -89,10 +89,10 @@ const updateTable = () => {
   dbClient.forEach(createRow);
 }
 
-const fillFields = () => {
-  document.getElementById("name").value = client.name;
-  document.getElementById("email").value = client.email;
-  document.getElementById("birthDate").value = client.birthDate;
+const fillFields = (client) => {
+  document.getElementById('name').value = client.name;
+  document.getElementById('email').value = client.email;
+  document.getElementById('birthDate').value = client.birthDate;
 }
 
 const editClient = (index) => {
