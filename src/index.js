@@ -40,7 +40,7 @@ const deleteClient = (index) => {
 const isValidFields = () => document.getElementById('form').reportValidity();
 
 const clearFields = () => {
-  const fields = document.querySelectorAll('.modal__form__field');
+  const fields = document.querySelectorAll('.modal-field');
   fields.forEach((field) => (field.value = ''));
   document.getElementById('name').dataset.index = 'new';
 }
@@ -59,12 +59,10 @@ const saveClient = () => {
       updateTable()
       closeModal();
     } else {
-      updateClient();
+      updateClient(index, client);
       updateTable()
       closeModal()
-    }
-    console.log(client);
-    
+    } 
   }
 }
 
@@ -87,7 +85,7 @@ const createRow = (client, index) => {
 }
 
 const clearTable = () => {
-  const rows = document.querySelectorAll("#tableClient>tbody tr");
+  const rows = document.querySelectorAll("#table>tbody tr");
   rows.forEach((row) => row.parentNode.removeChild(row));
 }
 
@@ -139,5 +137,5 @@ closeModalButton.addEventListener('click', closeModal);
 const saveClientButton = document.getElementById('saveClient');
 saveClientButton.addEventListener('click', saveClient);
 
-const editAndDeleteButton = document.querySelector('#table>tBody');
+const editAndDeleteButton = document.querySelector('#table>tbody');
 editAndDeleteButton.addEventListener('click', isEditOrDeleteButton);
