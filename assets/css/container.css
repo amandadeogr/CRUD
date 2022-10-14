@@ -7,4 +7,5 @@
    overflow-y: scroll;
    padding: 3rem;
    width: 80vw;
+   scrollbar-margin: .5rem;
 }
