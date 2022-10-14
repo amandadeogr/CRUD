@@ -126,6 +126,7 @@ const isEditOrDeleteButton = (event) => {
   }
 }
 
+updateTable()
 
 //events
 const registerClientButton = document.getElementById('registerClient');
