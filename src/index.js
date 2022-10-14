@@ -34,15 +34,16 @@ const deleteClient = (index) => {
   const dbClient = readClient();
   dbClient.splice(index, 1);
   setLocalStorage(dbClient);
-};
+}
 
 // interação com o layout
-const isValidFields = () => document.getElementById('form').reportValidity();
+const isValidFields = () => {
+  return document.getElementById('form').reportValidity();
+}
 
 const clearFields = () => {
   const fields = document.querySelectorAll('.modal-field');
   fields.forEach((field) => (field.value = ''));
-  document.getElementById('name').dataset.index = 'new';
 }
 
 const saveClient = () => {
@@ -53,16 +54,15 @@ const saveClient = () => {
       birthDate: document.getElementById('birthDate').value
     }
     const index = document.getElementById('name').dataset.index;
-    console.log(index)
     if(index == 'new') {
       createClient(client);
-      updateTable()
+      updateTable();
       closeModal();
     } else {
       updateClient(index, client);
-      updateTable()
-      closeModal()
-    } 
+      updateTable();
+      closeModal();
+    }
   }
 }
 
@@ -81,11 +81,11 @@ const createRow = (client, index) => {
         Excluir
      </button>
   `
-  const tBody = document.querySelector("#table>tbody").appendChild(newRow)
+  const tBody = document.querySelector("#table>tbody").appendChild(newRow);
 }
 
 const clearTable = () => {
-  const rows = document.querySelectorAll("#table>tbody tr");
+  const rows = document.querySelectorAll("#table > tbody tr");
   rows.forEach((row) => row.parentNode.removeChild(row));
 }
 
@@ -99,6 +99,8 @@ const fillFields = (client) => {
   document.getElementById('name').value = client.name;
   document.getElementById('email').value = client.email;
   document.getElementById('birthDate').value = client.birthDate;
+
+  document.getElementById('name').dataset.index = client.index;
 }
 
 const editClient = (index) => {
