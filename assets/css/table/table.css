@@ -1,13 +1,15 @@
 .table {
-   background-color: #1d1d1d;
    border-radius: 10px;
-   box-shadow: 1px 1px 40px #555555;
-   color: rgb(226, 226, 226);
-   min-height: 20vh;
-   margin: 2rem auto;
-   overflow-y: scroll;
-   padding: 1rem 2rem;
+   margin: 3rem auto;
    text-align: center;
    table-layout: fixed;
    width: 90%;
+}
+
+.table__head, .table__body {
+   border-bottom: 1px solid #696969;
+}
+
+th, td {
+   padding: 1rem;
 }
