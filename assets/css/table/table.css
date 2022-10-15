@@ -4,6 +4,7 @@
    text-align: center;
    table-layout: fixed;
    width: 90%;
+   word-wrap: break-word;
 }
 
 th, td {
