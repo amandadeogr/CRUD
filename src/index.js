@@ -72,7 +72,7 @@ const createRow = (client, index) => {
   <td>${client.name}</td>
   <td>${client.email}</td>
   <td>${client.birthDate}</td>
-  <td class="table__buttons">
+  <td>
      <button type="button" class="button edit" id="edit-${index}">
         Editar
      </button> 
