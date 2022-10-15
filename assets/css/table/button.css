@@ -21,3 +21,9 @@
    background-color: red;
    color: white;
 }
+
+@media (max-width: 755px) {
+   .button {
+      margin-bottom: 5px;
+   }
+}
