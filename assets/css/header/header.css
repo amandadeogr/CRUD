@@ -1,7 +1,6 @@
 .header {
    align-items: center;
    border-bottom: 1px solid #ccc;
-   box-shadow: 1px 1px 40px #ebebeb;
    color: #3b3b3b;
    display: flex;
    justify-content: space-around;
