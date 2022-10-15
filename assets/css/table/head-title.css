@@ -1,4 +1,5 @@
 .table__row__title {
+   border-bottom: 1px solid #ccc;
    color: rgb(73, 73, 73);
-   font-size: 1.3rem;
+   font-size: 1.2rem;
 }
