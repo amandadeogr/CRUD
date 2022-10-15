@@ -7,14 +7,16 @@
    transition: .5s;
 }
 
-.violet {
-   background-color: blueviolet;
-   border: 1px solid blueviolet;
+.green {
+   background-color: transparent;
+   border: 1px solid green;
+   color: green;
 }
 
-.violet:hover {
-   background-color: rgb(58, 1, 105);
+.green:hover {
+   background-color: green;
    border-color:rgb(58, 1, 105);
+   color: white;
 }
 
 .red {
