@@ -1,12 +1,12 @@
 .modal__content {
    background-color: white;
    border-radius: 10px;
-   box-shadow: 1px 1px 30px #000;
+   box-shadow: 1px 1px 30px rgb(49, 49, 49);
    display: flex;
    flex-direction: column;
    gap: 2rem;
    margin: 7rem auto;
-   padding: 2rem ;
+   padding: 1rem ;
    min-width: 300px;
-   width: 30%;
+   width: 40%;
 }

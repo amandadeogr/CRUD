@@ -1,8 +1,7 @@
 .modal__content__footer {
-   border-top: 1px solid blueviolet;
+   border-top: 1px solid #ccc;
    display: flex;
    gap: .5rem;
-   justify-content: end;
-   padding: .7rem 0;
-   width: 100%;
+   justify-content: flex-end;
+   padding-top: 1rem;
 }
