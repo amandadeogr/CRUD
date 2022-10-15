@@ -71,7 +71,7 @@ const createRow = (client, index) => {
   newRow.innerHTML = `
   <td>${client.name}</td>
   <td>${client.email}</td>
-  <td>${client.birthDate}</td>
+  <td>${client.birthDate.replace(/(\d*)-(\d*)-(\d*).*/, '$3/$2/$1')}</td>
   <td>
      <button type="button" class="button edit" id="edit-${index}">
         Editar
