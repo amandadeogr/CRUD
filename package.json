@@ -1,0 +1,24 @@
+{
+  "name": "simbiose-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx serve -l 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandadeogr/CRUD-Simbiose.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amandadeogr/CRUD-Simbiose/issues"
+  },
+  "homepage": "https://github.com/amandadeogr/CRUD-Simbiose#readme",
+  "dependencies": {
+    "serve": "^14.0.1"
+  }
+}
