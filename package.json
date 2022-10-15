@@ -20,5 +20,8 @@
   "homepage": "https://github.com/amandadeogr/CRUD-Simbiose#readme",
   "dependencies": {
     "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0"
   }
 }
