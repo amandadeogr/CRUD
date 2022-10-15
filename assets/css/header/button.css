@@ -1,15 +1,14 @@
 .header__button {
-   background-color: transparent;
-   border: 1px solid rgb(222, 188, 255);
-   border-radius: 10px;
-   color: rgb(222, 188, 255);
-   font-size: 1rem;
-   padding: 1rem;
+   background-color: #442ea8;
+   border: 1px solid #442ea8;
+   border-radius: 5px;
    cursor: pointer;
+   color: #f1f1f1;
+   font-size: 1rem;
+   padding: .7rem;
+   transition: .8s;
 }
 
 .header__button:hover {
-   background-color: rgb(207, 156, 255);
-   color: black;
-   transition: .5s;
+   background-color: #241661;
 }
