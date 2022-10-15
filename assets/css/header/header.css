@@ -1,12 +1,10 @@
 .header {
    align-items: center;
-   background-color: #1d1d1d;
-   border-radius: 10px;
-   box-shadow: 1px 1px 40px #555555;
-   color: rgb(226, 226, 226);
+   border-bottom: 1px solid #ccc;
+   box-shadow: 1px 1px 40px #ebebeb;
+   color: #3b3b3b;
    display: flex;
-   justify-content: space-between;
-   margin: auto;
+   justify-content: space-around;
    padding: 1rem 2rem;
-   width: 90%;
+   width: 100vw;
 }
