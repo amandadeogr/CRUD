@@ -1,5 +1,4 @@
-## 🛠️ Construído com
-k,°we;# CRUD - Cadastro de clientes
+# CRUD - Cadastro de clientes
 
 ## 🚀 Objetivo
 O objetivo desta aplicação é criar um CRUD, onde o usuário seja capaz de cadastrar, ler, editar e excluir um cliente.  Para cumprir com esse objetivo, optei por um layout, para a interface, minimalista.
