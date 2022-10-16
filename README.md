@@ -51,3 +51,4 @@ npm test
 ## ✒️ Autora
 
 * **Amanda Ramirez** - *Projeto Crud Simbiose* - [amandadeogr](https://github.com/amandadeogr)
+* Template por [**Armstrong Lohãns**](https://gist.github.com/lohhans) 😊
