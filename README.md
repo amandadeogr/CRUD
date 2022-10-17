@@ -6,8 +6,10 @@ O objetivo desta aplicação é criar um CRUD, onde o usuário seja capaz de cad
 
 ## 🛠️ Ferramentas utilizadas
 
+* Atomic Design
 * CSS3
 * Cypress
+* BEM
 * ESlint
 * GIT
 * HTML5
