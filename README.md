@@ -14,6 +14,7 @@ O objetivo desta aplicação é criar um CRUD, onde o usuário seja capaz de cad
 * GIT
 * HTML5
 * Javascript
+* LocalStorage
 * Navegador Chrome
 * Node v16^
 * NPM v8^
